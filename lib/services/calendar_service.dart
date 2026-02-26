@@ -23,6 +23,8 @@ class CalendarEvent {
 
 class CalendarService {
   final GoogleSignIn _googleSignIn = GoogleSignIn(
+    // GANTI 'YOUR_WEB_CLIENT_ID...' DENGAN CLIENT ID DARI GOOGLE CLOUD CONSOLE
+    clientId: '484040903262-9sqdltgc6gckcsg9qhn1bfckkjorqlgj.apps.googleusercontent.com',
     scopes: [
       calendar.CalendarApi.calendarEventsScope,
       calendar.CalendarApi.calendarScope,
