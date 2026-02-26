@@ -89,6 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.transparent,
         foregroundColor: Colors.blue.shade900,
         title: Row(
+          mainAxisSize: MainAxisSize.min,
           children: [
             Container(
               padding: const EdgeInsets.all(8),
@@ -103,12 +104,15 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             const SizedBox(width: 12),
-            const Text(
-              "AI Schedule",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 22,
-                letterSpacing: 0.5,
+            const Flexible(
+              child: Text(
+                "AI Schedule",
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 22,
+                  letterSpacing: 0.5,
+                ),
               ),
             ),
           ],
@@ -164,7 +168,7 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           // FORM INPUT TUGAS - Modern Card
           Container(
-            margin: const EdgeInsets.all(20),
+            margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
             decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
@@ -191,7 +195,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   borderRadius: BorderRadius.circular(25),
                 ),
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -240,7 +244,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           filled: true,
                           fillColor: Colors.transparent,
                           contentPadding: const EdgeInsets.symmetric(
-                            horizontal: 20,
+                            horizontal: 12,
                             vertical: 16,
                           ),
                         ),
@@ -273,7 +277,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 filled: true,
                                 fillColor: Colors.transparent,
                                 contentPadding: const EdgeInsets.symmetric(
-                                  horizontal: 20,
+                                  horizontal: 12,
                                   vertical: 16,
                                 ),
                               ),
@@ -304,7 +308,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 filled: true,
                                 fillColor: Colors.transparent,
                                 contentPadding: const EdgeInsets.symmetric(
-                                  horizontal: 20,
+                                  horizontal: 12,
                                   vertical: 8,
                                 ),
                               ),

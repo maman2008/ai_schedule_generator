@@ -2,6 +2,7 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart'; // untuk kReleaseMode
 import 'package:flutter/material.dart';
 import 'ui/home_screen.dart';
+import 'ui/splash_screen.dart';
 
 
 void main() {
@@ -50,7 +51,7 @@ class MainApp extends StatelessWidget {
         ),
       ),
 
-      home: const HomeScreen(), // Halaman pertama saat aplikasi dibuka
+      home: const SplashScreen(), // Halaman pertama saat aplikasi dibuka
     );
   }
 }
